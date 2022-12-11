@@ -1,0 +1,54 @@
+$principal: #181818;
+$secundario: #f1c40c;
+$gold1: #f4bd76;
+$gold2: #f6cd8f;
+$general: #efefef;
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.hero {
+	display: flex;
+	width: 100%;
+	min-height: 80vh;
+	background: linear-gradient(
+			180deg,
+			rgba(0, 0, 0, 0.5) 0%,
+			rgba(0, 0, 0, 0.5) 100%
+		),
+		url(/banner.png);
+	background-position: center center;
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+	&__content {
+		line-height: 1.15;
+	}
+	&__title {
+		font-size: 2.81rem;
+		color: #fff;
+	}
+	&__text {
+		text-align: justify;
+		font-size: 1.56rem;
+		color: #fff;
+		margin: 1.87rem 0;
+	}
+	&__link {
+		width: max-content;
+		display: flex;
+		gap: 0.93rem;
+		font-size: 1.56rem;
+		background-color: $general;
+		padding: 0.62rem 0.93rem;
+		color: #262626;
+    transition: 0.3s ease;
+		&:hover {
+			background-color: $gold1;
+			color: $general;
+      transition: 0.3s ease;
+		}
+	}
+}
