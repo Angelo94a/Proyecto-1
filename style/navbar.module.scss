@@ -13,15 +13,16 @@ $general: #efefef;
 .hero {
 	position: absolute;
 	width: 100%;
-	border-bottom: #f1f1f1;
+	border-bottom: solid 2px hsla(0, 0%, 95%, 0.5);
 }
 
 .nav {
-	min-height: 4.37rem;
+	min-height: 5rem;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 0 1.25rem;
+	padding: 1.87rem 0;
+	color: $general;
 	&__branding {
 		font-size: 1.87rem;
 		color: $gold1;
