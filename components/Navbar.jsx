@@ -22,7 +22,7 @@ export default function Navbar() {
 			<header className={style.hero}>
 				<div className={style.container}>
 					<nav className={style.nav}>
-						<h1 className={style.nav__logo}>
+						<h1 className={style.nav__branding}>
 							Golden<span>Gym</span>
 						</h1>
 						<ul className={style.nav__menu}>
@@ -32,14 +32,20 @@ export default function Navbar() {
 								</li>
 							))}
 						</ul>
+						
+						<div className={style.social}>
+							<Link href="#" className={style.social__link}>
+								<ion-icon name="logo-facebook"></ion-icon>
+							</Link>
+							<Link href="#" className={style.social__link}>
+								<ion-icon name="logo-instagram"></ion-icon>
+							</Link>
+						</div>
 
 						<div className={style.btn}>
 							<span className={style.bar}></span>
-							<bar-1></bar-1>
 							<span className={style.bar}></span>
-							<bar-2></bar-2>
 							<span className={style.bar}></span>
-							<bar-3></bar-3>
 						</div>
 					</nav>
 				</div>
